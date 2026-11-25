@@ -1,20 +1,70 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>SmartCalcHub Calculators</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<h1>SmartCalcHub</h1>
 
-<h1>Age Calculator</h1>
-
+<!-- Age Calculator -->
+<h2>Age Calculator</h2>
 <input type="number" id="birthYear" placeholder="Enter Birth Year">
-
 <button onclick="calculateAge()">Calculate Age</button>
-
 <p id="ageResult"></p>
 
-<script src="script.js"></script>
+<hr>
 
-</body>
-</html>
+<!-- BMI Calculator -->
+<h2>BMI Calculator</h2>
+<input type="number" id="weight" placeholder="Weight (kg)">
+<input type="number" id="height" placeholder="Height (cm)">
+<button onclick="calculateBMI()">Calculate BMI</button>
+<p id="bmiResult"></p>
+
+<hr>
+
+<!-- Percentage Calculator -->
+<h2>Percentage Calculator</h2>
+<input type="number" id="obtainedMarks" placeholder="Obtained Marks">
+<input type="number" id="totalMarks" placeholder="Total Marks">
+<button onclick="calculatePercentage()">Calculate Percentage</button>
+<p id="percentageResult"></p>
+
+<hr>
+
+<!-- Password Generator -->
+<h2>Password Generator</h2>
+<button onclick="generatePassword()">Generate Password</button>
+<p id="passwordResult"></p>
+
+<hr>
+
+<!-- Unit Converter -->
+<h2>Unit Converter</h2>
+<input type="number" id="meterInput" placeholder="Meters">
+<button onclick="convertMeter()">Convert</button>
+<p id="unitResult"></p>
+
+<hr>
+
+<!-- EMI Calculator -->
+<h2>EMI Calculator</h2>
+<input type="number" id="loanAmount" placeholder="Loan Amount">
+<input type="number" id="interestRate" placeholder="Interest Rate">
+<input type="number" id="loanYears" placeholder="Years">
+<button onclick="calculateEMI()">Calculate EMI</button>
+<p id="emiResult"></p>
+
+<hr>
+
+<!-- Discount Calculator -->
+<h2>Discount Calculator</h2>
+<input type="number" id="originalPrice" placeholder="Original Price">
+<input type="number" id="discountPercent" placeholder="Discount %">
+<button onclick="calculateDiscount()">Calculate Discount</button>
+<p id="discountResult"></p>
+
+<hr>
+
+<!-- GST Calculator -->
+<h2>GST Calculator</h2>
+<input type="number" id="gstAmount" placeholder="Amount">
+<input type="number" id="gstRate" placeholder="GST Rate">
+<button onclick="calculateGST()">Calculate GST</button>
+<p id="gstResult"></p>
+
+<script src="script.js"></script>
