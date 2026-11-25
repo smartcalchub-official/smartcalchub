@@ -77,3 +77,10 @@ nav a{
 nav a:hover{
     color: #ffd700;
 }
+footer{
+    text-align:center;
+    margin-top:40px;
+    padding:20px;
+    color:white;
+    font-size:16px;
+}
