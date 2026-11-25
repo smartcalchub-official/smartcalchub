@@ -1,38 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Calculators - SmartCalcHub</title>
-    <link rel="stylesheet" href="style.css">
+  <title>SmartCalcHub Calculators</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="calculators.html">Calculators</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-</nav>
+<h1>Age Calculator</h1>
 
-<h1>SMARTCALCHUB</h1>
+<input type="number" id="birthYear" placeholder="Enter Birth Year">
 
-<h2>Available Calculators</h2>
+<button onclick="calculateAge()">Calculate Age</button>
 
-<p>✅ Age Calculator</p>
-<p>✅ BMI Calculator</p>
-<p>✅ Percentage Calculator</p>
-<p>✅ QR Code Generator</p>
-<p>✅ Password Generator</p>
-<p>✅ Unit Converter</p>
-<p>✅ EMI Calculator</p>
-<p>✅ Loan Eligibility Calculator</p>
-<p>✅ Discount Calculator</p>
-<p>✅ Currency Converter</p>
-<p>✅ GST Calculator</p>
+<p id="ageResult"></p>
 
-<footer>
-    <p class="brand">⚡ QUARTER ⚡</p>
-</footer>
+<script src="script.js"></script>
 
 </body>
 </html>
