@@ -63,8 +63,8 @@ function generateQR() {
 }
 
 function toggleDarkMode() {
+    alert("Dark Mode Working");
     document.body.classList.toggle("dark");
-}
 }
 
 function convertMeter() {
