@@ -1,10 +1,21 @@
 function calculateAge() {
-    let birthYear = document.getElementById("birthYear").value;
-    let currentYear = new Date().getFullYear();
-    let age = currentYear - birthYear;
+    let dob = new Date(document.getElementById("dob").value);
+    let today = new Date();
+
+    let age = today.getFullYear() - dob.getFullYear();
+
+    let monthDiff = today.getMonth() - dob.getMonth();
+
+    if (
+        monthDiff < 0 ||
+        (monthDiff === 0 && today.getDate() < dob.getDate())
+    ) {
+        age--;
+    }
 
     document.getElementById("ageResult").innerText =
         "Your Age: " + age + " years";
+}
 }
 
 function calculateBMI() {
@@ -53,6 +64,7 @@ function generateQR() {
 
 function toggleDarkMode() {
     document.body.classList.toggle("dark");
+}
 }
 
 function convertMeter() {
