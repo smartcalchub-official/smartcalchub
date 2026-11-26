@@ -25,7 +25,7 @@ function calculateAge() {
     document.getElementById("ageResult").innerText =
     "Your Age: " + age + " years";
 }
-}
+
 
 
 function calculateBMI() {
