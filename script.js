@@ -187,23 +187,4 @@ function calculateSI() {
         "Simple Interest: ₹" + SI.toFixed(2) +
         "<br>Total Amount: ₹" + total.toFixed(2);
 }
-function calculateSI() {
-    alert("Button Working");
 
-    let P = parseFloat(document.getElementById("siPrincipal").value);
-    let R = parseFloat(document.getElementById("siRate").value);
-    let T = parseFloat(document.getElementById("siTime").value);
-
-    if (!P || !R || !T) {
-        document.getElementById("siResult").innerHTML =
-            "Please enter all values";
-        return;
-    }
-
-    let SI = (P * R * T) / 100;
-    let total = P + SI;
-
-    document.getElementById("siResult").innerHTML =
-        "Simple Interest: ₹" + SI.toFixed(2) +
-        "<br>Total Amount: ₹" + total.toFixed(2);
-}
