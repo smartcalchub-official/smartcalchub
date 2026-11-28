@@ -151,3 +151,21 @@ function calculateSIP() {
     document.getElementById("sipResult").innerHTML =
         "Estimated Maturity Value: ₹" + maturity.toFixed(2);
 }
+function calculateCI() {
+    let P = parseFloat(document.getElementById("principal").value);
+    let R = parseFloat(document.getElementById("rate").value);
+    let T = parseFloat(document.getElementById("time").value);
+
+    if (!P || !R || !T) {
+        document.getElementById("ciResult").innerHTML =
+            "Please enter all values";
+        return;
+    }
+
+    let amount = P * Math.pow((1 + R / 100), T);
+    let ci = amount - P;
+
+    document.getElementById("ciResult").innerHTML =
+        "Compound Interest: ₹" + ci.toFixed(2) +
+        "<br>Total Amount: ₹" + amount.toFixed(2);
+}
