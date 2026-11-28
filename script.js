@@ -132,3 +132,22 @@ function calculateGST() {
         "GST: ₹" + gst.toFixed(2) +
         " | Total: ₹" + total.toFixed(2);
 }
+function calculateSIP() {
+    let P = parseFloat(document.getElementById("sipAmount").value);
+    let annualRate = parseFloat(document.getElementById("sipRate").value);
+    let years = parseFloat(document.getElementById("sipYears").value);
+
+    if (!P || !annualRate || !years) {
+        document.getElementById("sipResult").innerHTML =
+            "Please enter all values";
+        return;
+    }
+
+    let r = annualRate / 12 / 100;
+    let n = years * 12;
+
+    let maturity = P * (((Math.pow(1 + r, n)) - 1) / r) * (1 + r);
+
+    document.getElementById("sipResult").innerHTML =
+        "Estimated Maturity Value: ₹" + maturity.toFixed(2);
+}
